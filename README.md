@@ -9,6 +9,7 @@ Our submission record has an extended two code files: extractFeatures.py and Tra
 The code is all done as required by Submission Format. The code can automatically get the category and the number of categories, so it can be runned in all the sub-tasks.We are based on the genre classification, so you can give priority to the genre sub-tasks.
 
 ExtractFeatures.py receives two command-line arguments, the first is the temporary folder path, and the second is the feature extract file path. 
+
 TrainAndClassify.py receives four command line parameters, the first is the temporary folder path, the second is the training set file path, the third is the test set file path, the fourth is the output file path(output file should be created).
 
 The code file run format is as follows:
