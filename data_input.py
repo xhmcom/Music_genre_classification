@@ -6,7 +6,7 @@ import librosa
 import librosa.display
 import numpy as np
 import matplotlib.pyplot as plt
-
+import py_compile
 
 GENRE_LIST = ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz', 'metal', 'pop', 'reggae', 'rock']
 
@@ -183,6 +183,12 @@ def result_analysis():
     f.close()
 
 
+def get_pyc():
+
+    py_compile.compile('G:\PycharmProjects\musicclassification\classificationbyCNN\mirex_test/extractFeatures.py')
+    py_compile.compile('G:\PycharmProjects\musicclassification\classificationbyCNN\mirex_test/TrainAndClassify.py')
+
+
 def main(argv=None):
     """
     fist use read_data_set(),
@@ -190,13 +196,13 @@ def main(argv=None):
     data_test() just for some test.
     """
     # read_data_set()
-    data_test()
+    # data_test()
     # set_mirex_data()
     # set_traintest_file()
     # mfcc_data()
     # data_set_seperation()
     # data_set_label()
-
+    get_pyc()
 if __name__ == '__main__':
     main()
 
